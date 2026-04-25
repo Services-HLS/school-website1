@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "framework": "vite",
   "buildCommand": "npm run build",
-  "outputDirectory": ".output",
-  "cleanUrls": true
+  "outputDirectory": "dist/client",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
