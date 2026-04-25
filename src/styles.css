@@ -1,10 +1,8 @@
-@import "tailwindcss" source(none);
-@source "../src";
+@import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
+:root {
+  --radius: 0.5rem;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -58,10 +56,6 @@
     var(--gold) 50%,
     color-mix(in oklab, var(--gold) 70%, var(--forest)) 100%
   );
-}
-
-:root {
-  --radius: 0.5rem;
 
   /* Brand */
   --ivory: oklch(0.98 0.01 160);
